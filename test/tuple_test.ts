@@ -1,12 +1,7 @@
 import assert from 'power-assert';
-import { clear } from '../src/commandOptions';
 import dtsgenerator from '../src/core';
 
 describe('tuple test', () => {
-
-    afterEach(() => {
-        clear();
-    });
 
     it('no min', async () => {
         const schema: JsonSchemaOrg.Draft04.Schema = {
